@@ -133,7 +133,10 @@ export DISTCC_HOSTS='localhost/12 +zeroconf'
 NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
 
 # node
-. ~/.nvm/nvm.sh
-nvm use v0.11.2 > /dev/null
-alias sudo='sudo '
-
+if [ -s ~/.nvm/nvm.sh ]; then
+  source ~/.nvm/nvm.sh
+  nvm use v0.11.2 &> /dev/null
+  alias node="$NVM_BIN/node"
+  alias npm="$NVM_BIN/npm"
+  alias sudo='sudo '
+fi
