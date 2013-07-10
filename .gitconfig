@@ -1,0 +1,37 @@
+[user]
+  name = Szu-Yu Chen (Aknow)
+  email = achaoswing@gmail.com
+[core]
+  editor = vim
+[color]
+  ui = auto
+[diff]
+  tool = p4merge
+[difftool]
+  prompt = false
+[difftool "p4merge"]
+  cmd = "p4merge $LOCAL $REMOTE"
+[merge]
+  tool = p4merge
+[mergetool]
+  keepBackup = false
+  prompt = false
+[mergetool "p4merge"]
+  cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+  trustExitCode = true
+  keepBackup = false
+  prompt = false
+[github]
+  user = aknow
+[alias]
+  lo = log --oneline
+  br = branch
+  cbr = rev-parse --abbrev-ref HEAD
+  df = diff
+  dt = difftool
+  mt = mergetool
+  st = status
+  co = checkout
+  ci = commit
+  show2 = "!f() { git dt $1^ $1; }; f"
+  files = "!f() { git diff --name-status $1^ $1; }; f"

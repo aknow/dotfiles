@@ -1,0 +1,30 @@
+[ui]
+username = Szu-Yu Chen [:aknow] <szchen@mozilla.com>
+editor=vim
+
+[defaults]
+diff = -pU8
+qdiff = -pU8
+qnew = -UDe
+qseries = -sv
+
+[extensions]
+color =
+hgext.graphlog =
+hgext.mq =
+hgext.record =
+hgext.rebase =
+churn =
+trychooser = ~/local/trychooser/trychooser
+hgext.purge=
+
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
+[alias]
+addtry  = qnew -m "try: -b o -p ics_armv7a_gecko,emulator,panda,unagi -u crashtest-1,crashtest-2,crashtest-3,reftest-1,reftest-2,reftest-3,reftest-4,reftest-5,reftest-6,reftest-7,reftest-8,reftest-9,reftest-10,marionette-webapi -t none" try
+addmtry = qnew -m "try: -b o -p ics_armv7a_gecko -u marionette-webapi -t none" try
+try     = push -f ssh://hg.mozilla.org/try
+
