@@ -1,13 +1,7 @@
 #!/bin/sh
 
-# dotfiles
 cd
-if [ -d ./dotfiles/ ]; then
-  cd dotfiles
-  git pull
-  git checkout -f HEAD
-  cd
-else
+if [ ! -d ./dotfiles/ ]; then
   git clone https://github.com/aknow/dotfiles.git
 fi
 
