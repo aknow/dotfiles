@@ -140,3 +140,5 @@ if [ -s ~/.nvm/nvm.sh ]; then
   alias npm="$NVM_BIN/npm"
   alias sudo='sudo '
 fi
+
+alias mozhgupdate='hg qpop -a ; hg qseries | cut -b 1 | tac | xargs hg qremove ; hg pull -u'
