@@ -36,3 +36,5 @@
   show2 = "!f() { git dt $1^ $1; }; f"
   files = "!f() { git diff --name-status $1^ $1; }; f"
   hgp = show --format='%x23 HG changeset patch%n%x23 User %an <%ae>%n%s%b' -U8
+[push]
+	default = matching
