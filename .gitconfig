@@ -17,7 +17,7 @@
   keepBackup = false
   prompt = false
 [mergetool "p4merge"]
-  cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+  cmd = "p4merge $BASE $LOCAL $REMOTE $MERGED"
   trustExitCode = true
   keepBackup = false
   prompt = false
@@ -37,4 +37,4 @@
   files = "!f() { git diff --name-status $1^ $1; }; f"
   hgp = show --format='%x23 HG changeset patch%n%x23 User %an <%ae>%n%s%b' -U8
 [push]
-	default = matching
+  default = matching

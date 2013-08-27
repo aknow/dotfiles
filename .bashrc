@@ -112,7 +112,7 @@ fi
 
 export TERM="xterm-256color"
 
-CUSTOM_PATH=~/bin:~/local/p4v/bin:~/local/trychooser
+CUSTOM_PATH=~/bin:~/local/p4v/bin:~/local/trychooser:~/local/moz-git-tools
 CUSTOM_PATH=$CUSTOM_PATH:~/android/sdk/tools:~/android/sdk/platform-tools
 PATH=$CUSTOM_PATH:$PATH
 
@@ -140,5 +140,3 @@ if [ -s ~/.nvm/nvm.sh ]; then
   alias npm="$NVM_BIN/npm"
   alias sudo='sudo '
 fi
-
-alias mozhgupdate='hg qpop -a ; hg qseries | cut -b 1 | tac | xargs hg qremove ; hg pull -u'
