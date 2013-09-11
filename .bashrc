@@ -112,7 +112,7 @@ fi
 
 export TERM="xterm-256color"
 
-CUSTOM_PATH=~/bin:~/local/p4v/bin:~/local/trychooser:~/local/moz-git-tools
+CUSTOM_PATH=~/bin:~/bin/latexmk:~/local/p4v/bin:~/local/trychooser:~/local/moz-git-tools
 CUSTOM_PATH=$CUSTOM_PATH:~/android/sdk/tools:~/android/sdk/platform-tools
 PATH=$CUSTOM_PATH:$PATH
 
@@ -140,3 +140,4 @@ if [ -s ~/.nvm/nvm.sh ]; then
   alias npm="$NVM_BIN/npm"
   alias sudo='sudo '
 fi
+test -r ~/algs4/bin/config.sh && source ~/algs4/bin/config.sh
