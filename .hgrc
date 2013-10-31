@@ -25,5 +25,5 @@ unified = 8
 
 [alias]
 addtry = qnew -m  "try: -b do -p emulator,panda,unagi -u xpcshell,marionette,mochitests,marionette-webapi -t none" try
-addalltry = qnew -m "try: -b do -p all -u crashtest-1,crashtest-2,crashtest-3,reftest-1,reftest-2,reftest-3,reftest-4,reftest-5,reftest-6,reftest-7,reftest-8,reftest-9,reftest-10,marionette-webapi -t none" try
+addalltry = qnew -m "try: -b do -p all -u xpcshell,marionette,mochitests,crashtest-1,crashtest-2,crashtest-3,reftest-1,reftest-2,reftest-3,reftest-4,reftest-5,reftest-6,reftest-7,reftest-8,reftest-9,reftest-10,marionette-webapi -t none" try
 try     = push -f ssh://hg.mozilla.org/try
