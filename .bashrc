@@ -141,3 +141,5 @@ if [ -s ~/.nvm/nvm.sh ]; then
   alias sudo='sudo '
 fi
 test -r ~/algs4/bin/config.sh && source ~/algs4/bin/config.sh
+
+alias gxx='g++ -std=c++0x'
