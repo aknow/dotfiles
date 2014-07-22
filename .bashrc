@@ -116,8 +116,7 @@ CUSTOM_PATH=~/bin:~/bin/latexmk:~/local/p4v/bin:~/local/trychooser:~/local/moz-g
 CUSTOM_PATH=$CUSTOM_PATH:~/android/sdk/tools:~/android/sdk/platform-tools
 PATH=$CUSTOM_PATH:$PATH
 
-# set hub as git
-eval "$(hub alias -s)"
+alias git=hub
 
 # pretty print python
 alias ppj='python -mjson.tool'
